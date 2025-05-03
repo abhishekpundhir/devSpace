@@ -65,8 +65,9 @@ const Navbar = () => {
     <nav className="bg-github dark:bg-github-dark border-b border-github-border">
       <div className="container flex items-center justify-between h-16 px-4 mx-auto">
         <div className="flex items-center space-x-4">
-          <Link to="/" className="flex-shrink-0">
-            <img src="/public/logo.png" alt="DevSpace Logo"  className="xximg"/>
+          <Link to="/" className=" flex items-center justify-center  flex-shrink-0">
+            <img src="public/social.png" alt="DevSpace Logo"  className="xximg"/><h4 className="hhhh"><b> DevSpace</b></h4> 
+            
           </Link>
           
           <div className="relative hidden md:block">
