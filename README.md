@@ -4,7 +4,7 @@
 
 - In this Version of Github i added a new Usefull and valubale feature  Allow Developers to see visual representation of how a repository has evolved over time, showing key commits, branches, contributor additions, and code complexity changes in an interactive timeline. This would help developers understand how a project has grown and changed without digging through commit history.
 
-whats New ? 
+## whats New ? 
 - Project Evolution Timeline
 - Add project knowledge: Set key context or custom instructions you want to include in every edit in this project.
 - Project Tech Stck tags for internal SEO.
