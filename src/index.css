@@ -1,0 +1,121 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 210 12% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 12% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 12% 16%;
+
+    --primary: 212 12% 18%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 210 29% 97%;
+    --secondary-foreground: 210 12% 25%;
+
+    --muted: 210 29% 97%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 142 44% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221.2 83.2% 53.3%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 12% 16%;
+    --sidebar-primary: 142 44% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 29% 97%;
+    --sidebar-accent-foreground: 210 12% 25%;
+    --sidebar-border: 214.3 31.8% 91.4%;
+    --sidebar-ring: 221.2 83.2% 53.3%;
+  }
+
+  .dark {
+    --background: 225 25% 7%;
+    --foreground: 210 30% 92%;
+
+    --card: 225 25% 9%;
+    --card-foreground: 210 30% 92%;
+
+    --popover: 225 25% 9%;
+    --popover-foreground: 210 30% 92%;
+
+    --primary: 210 30% 92%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 19.8% 15%;
+    --secondary-foreground: 210 30% 92%;
+
+    --muted: 217.2 19.8% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 142 44% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 19.8% 20%;
+    --input: 217.2 19.8% 18%;
+    --ring: 224.3 76.3% 48%;
+
+    --sidebar-background: 225 25% 9%;
+    --sidebar-foreground: 210 30% 92%;
+    --sidebar-primary: 142 44% 42%; 
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217.2 19.8% 15%;
+    --sidebar-accent-foreground: 210 30% 92%;
+    --sidebar-border: 217.2 19.8% 20%;
+    --sidebar-ring: 224.3 76.3% 48%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.repository-card {
+  @apply border border-github-border rounded-md p-4 transition-all hover:shadow-sm;
+}
+
+.file-row {
+  @apply border-b border-github-border hover:bg-github-light dark:hover:bg-github-dark/30 transition-colors;
+}
+
+.github-button {
+  @apply px-4 py-1.5 rounded-md bg-github-green text-white font-medium text-sm hover:opacity-90 transition-opacity;
+}
+
+.github-border {
+  @apply border-github-border;
+}
+
+.timeline-node {
+  @apply w-4 h-4 rounded-full border-2 border-accent bg-background z-10;
+}
+
+.timeline-line {
+  @apply absolute h-full w-0.5 bg-muted left-[7px] -z-10;
+}
+
+
