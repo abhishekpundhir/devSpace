@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 px-4 mx-auto">
         <div className="flex items-center space-x-4">
           <Link to="/" className="flex-shrink-0">
-            <img src="/public/logo.png" alt="DevSpace Logo"  className="xximg"/>
+            <img src="public/logo.png" alt="DevSpace Logo"  className="xximg"/>
           </Link>
           
           <div className="relative hidden md:block">
